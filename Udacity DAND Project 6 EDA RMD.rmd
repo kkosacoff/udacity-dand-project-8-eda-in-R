@@ -3,10 +3,6 @@ title: "Exploratory Data Analysis in R for Prosper Loans dataset"
 author: "Kevin Ivan Kosacoff"
 date: "18-02-2019"
 output:
-  github_document:
-    dev: png
-  pdf_document:
-    dev: pdf
   html_document:
     theme : readable  # "default", "cerulean", "journal",
                       # "flatly", "readable", "spacelab",
@@ -18,6 +14,10 @@ output:
     toc: no
     toc_depth: 3
     toc_float: no
+    dev: png
+  pdf_document:
+    dev: pdf
+  github_document:
     dev: png
 ---
   
