@@ -1,8 +1,16 @@
 ---
 title: "Exploratory Data Analysis in R for Prosper Loans dataset"
+
+knit: (function(input_file, encoding) {out_dir <- 'docs';rmarkdown::render(input_file, 
+      encoding=encoding, output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
+
 author: "Kevin Ivan Kosacoff"
 date: "18-02-2019"
 output:
+  pdf_document:
+    dev: png
+  github_document:
+    dev: png
   html_document:
     theme : readable  # "default", "cerulean", "journal",
                       # "flatly", "readable", "spacelab",
@@ -14,10 +22,6 @@ output:
     toc: no
     toc_depth: 3
     toc_float: no
-    dev: png
-  pdf_document:
-    dev: cairo_pdf
-  github_document:
     dev: png
 ---
   
