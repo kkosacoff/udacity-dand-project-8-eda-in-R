@@ -1,13 +1,11 @@
 ---
 title: "Exploratory Data Analysis in R for Prosper Loans dataset"
-
-knit: (function(input_file, encoding) {out_dir <- 'docs';rmarkdown::render(input_file, 
-      encoding=encoding, output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
-
 author: "Kevin Ivan Kosacoff"
 date: "18-02-2019"
 output:
   pdf_document:
+    dev: png
+  word_document:
     dev: png
   github_document:
     dev: png
@@ -33,6 +31,7 @@ output:
 #install.packages(c("dplyr", "tidyr"))
 #install.packages('devtools')
 #install.packages('Cairo')
+#install.packages('rmarkdown')
 #devtools::install_github('VPetukhov/ggrastr')
 #tinytex::install_tinytex()
 library(ggplot2)
@@ -40,6 +39,7 @@ library(knitr)
 library(dplyr)
 library(tidyr)
 library(Cairo)
+library(rmarkdown)
 #update.packages(ask = FALSE, checkBuilt = TRUE)  # update R packages
 #tinytex::tlmgr_update()
 #tinytex::tlmgr_install("pdfcrop")
@@ -56,10 +56,11 @@ library(Cairo)
 
 # knitr: Suppress code/messages/warnings 
 #        Set default plot options and center them
-knitr::opts_chunk$set(fig.width=6, fig.height= 4, fig.path='Figs/',
+knitr::opts_chunk$set(fig.width=5.5, fig.height= 3.5, fig.path='Figs/',
                       fig.align='center',tidy=TRUE,
                       echo=FALSE,warning=FALSE,message=FALSE)
 
+#rmarkdown::render("Udacity-DAND-Project-6-EDA-RMD.rmd", "pdf_document")
 
 ```
 
